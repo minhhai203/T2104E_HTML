@@ -5,8 +5,8 @@
     width: 220px;
 }
 hr{
-    background-color: red;
-    border-bottom: red;
+    color:rgb(185, 34, 34);
+    background-color:rgb(231, 10, 66);
 }
 .h4{
     color: red;
