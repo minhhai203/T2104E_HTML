@@ -1,150 +1,180 @@
-body{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 14px;
-    color: white;
-    background-color: rgb(20, 20, 53);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: #14182a !important;
+}
+.header {
+  min-height: 80px;
+  background-color: #1b2039;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 80px;
+  z-index: 1;
+}
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
 }
 
-.header{
-    width: 100%;
-    height: 80px;
-    background-color: rgb(33, 33, 105);
-    
+.title1 {
+  color: rgb(126, 194, 199);
 }
-.logo{
-    float: left;
-    margin-left: 100px;
-    padding-top: 20px;
+.header .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
 }
-.logo a{
-    text-decoration: none;
-    font-size: 24px;
-    color: white;
+.header .trend-songs {
+  float: right;
+  text-decoration: none;
+  color: #2cc8e5;
+  font-size: 16px;
 }
-.trending{
-    float: right;
-    font-size: 18px;
-    color: white;
-    padding-right: 200px;
-    padding-top: 30px;
-   
+.header .trend-songs-title {
+  float: left;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 500px;
+  text-overflow: ellipsis;
 }
-.title1 , .song{
-    display: inline-block;
+.main {
+  margin-top: 150px;
 }
-.title1{
-    color: rgb(126, 194, 199);
-}
-.song a{
-    color: white;
-    text-decoration: none;
-}
-.container{
-    padding-top: 50px;
-}
-.h2-title{
-    color: rgb(126, 194, 199);
-}
-.img-music{
-    border-radius: 10px;
-    margin-left: 10px;
-    width: 250px;
-    height: 250px;
+.item {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-bottom: 25px;
+  }
+.song a {
+  color: white;
+  text-decoration: none;
 }
 
-.name-product{
-    font-weight: 600;
-    font-size: 20px;
-    color: white;
-    text-align: center;
+.h2-title {
+  color: rgb(126, 194, 199);
 }
-.auhtor{
-    color: white;
-    text-align: center;
+.img-music {
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 250px;
+  height: 250px;
 }
-.section{
-    height: 400px;
+.img-music:hover {
+  opacity: 75%;
 }
-.hr-bottom{
-    color: white;
+.name-product {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  text-align: center;
 }
-.h3-title{
-    color: rgb(126, 194, 199);
+.auhtor {
+  color: white;
+  text-align: center;
 }
-.img-footer{
-    width: 120px;
-    padding-top: 5px;
+.section {
+  /* border-bottom: 2px solid rgba(255, 255, 255, 0.5); */
+  margin-bottom: 50px;
 }
-.contact{
-    line-height: 2.5;
+.trending-songs {
+  padding: 50px 100px;
+  color: #fff;
+  text-align: center;
+  margin: 50px;
+  
 }
-.links{
-    text-align: center;
-    letter-spacing: 5px;
-   
+.trending-songs h4 {
+  font-style: italic;
 }
-.number-page{
-    height: 60px;
+.trending-songs-heading {
+  margin-bottom: 25px;
+  color: #2cc8e5;
 }
-.link-number{ 
-    color: white;
-    font-size: 16px;
-    text-decoration: none;   
+.hr-bottom {
+  color: white;
+  margin-top: 10px;
 }
-.links a{
-   text-decoration: none;
+.h3-title {
+  color: rgb(126, 194, 199);
 }
-.choose{
-    background-color: black;
+.img-footer {
+  width: 120px;
+  padding-top: 5px;
 }
-.link-number:hover{
-    background-color: bisque;
+.contact {
+  line-height: 2.5;
 }
-.h2-title1{
-    color: rgb(126, 194, 199);
-    text-align: center;
-    font-weight: 700;
-    padding-top: 20px;
+.links {
+  text-align: center;
+  letter-spacing: 5px;
 }
-.img-songs{
-    text-align: center;
-    
+.link-number {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
 }
-.img-songs img{
-    width: 250px;
+.links a {
+  text-decoration: none;
 }
-.section2{
-    height: 600px;
+.choose {
+  background-color: black;
 }
-.detail{
-    text-align: center;
-    font-weight: 800;
-    font-style: italic;
+.link-number:hover {
+  background-color: bisque;
 }
-.detail h2{
-    font-weight: 900;
-    font-style: normal !important;
+.h2-title1 {
+  color: rgb(126, 194, 199);
+  text-align: center;
+  font-weight: 700;
+  padding-top: 20px;
 }
-.information-songs{
-    width: 900px; 
-   
+.img-songs {
+  text-align: center;
 }
-.information-songs p{
-    text-align: center;
-    padding-left: 250px;
+.img-songs img {
+  width: 250px;
 }
-audio{
-    padding-top: 20px;
+.detail {
+  text-align: center;
+  font-weight: 800;
+  font-style: italic;
 }
-.section3{
-    height: 2000px;
+.detail h2 {
+  font-weight: 900;
+  font-style: normal !important;
 }
-.lyric-songs{
-    width: 400px;
-    margin-left: 400px;
+.information-songs {
+  width: 900px;
 }
-.lyric-songs p{
-    font-size: 16px;
-    line-height: 25px;
-    word-wrap: break-word;
+.information-songs p {
+  text-align: center;
+  padding-left: 250px;
+}
+audio {
+  padding-top: 20px;
+}
+.section3 {
+  height: 2000px;
+}
+.lyric-songs {
+  width: 400px;
+  margin-left: 400px;
+}
+.lyric-songs p {
+  font-size: 16px;
+  line-height: 25px;
+  word-wrap: break-word;
 }
