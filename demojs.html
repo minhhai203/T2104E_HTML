@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Demo JS</h1>
+    <script type="text/javascript">
+        // var x;
+        // x = 100;
+        // console.log(x);
+        // setTimeout(function() {
+        //     alert(" HIII" );
+        // },3000)
+        // 
+        // var count = 5;
+        // var luckyNum = prompt("Nhap con so may man: ");
+        // luckyNum = parseInt(luckyNum);
+        // var loto = setInterval(function () {
+        //     if (luckyNum != NaN) {
+        //         var random = Math.random() * 100;
+        //         random = parseInt(random);
+        //         if (random == luckyNum) {
+        //             alert("Ban da trung 10 tr");
+        //             clearInterval(loto);
+        //         } else{
+        //             alert("Chuc ban may man lan sau !");
+        //         }
+        //         count--;  
+        //     }
+        //     else {
+        //         alert("Vui long nhap lai so");
+        //     }
+        //     if (count <= 0) {
+        //         clearInterval(loto);
+        //     }
+        // }, 5000)
+
+        var phut = prompt("Nhập số phút cần đếm ngược: ");
+        var giay = prompt("Nhập số giây cần đếm ngược: ");
+        alert("Thời gian đếm ngược của bạn là " + phut + " phút " + ": " + giay + " giây");
+        phut = parseInt(phut);
+        giay = parseInt(giay);
+        var demNguoc = setInterval(function () {
+            var phut_txt = phut >= 10 ? phut : "0" + phut;
+            var giay_txt = giay >= 10 ? giay : "0" + giay;
+            giay--;
+            if (giay == -1) {
+                phut -= 1;
+                giay = 59;
+            }
+            if (phut == 0 && giay == 0) {
+                clearInterval(demNguoc);
+                console.log(" Hết giờ !");
+                alert("Hết giờ");
+            }
+            console.log(phut_txt + ":" + giay_txt);
+        }, 1000)
+    </script>
+</body>
+
+</html>
