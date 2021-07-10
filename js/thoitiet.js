@@ -29,7 +29,7 @@ $.ajax({
 function loadWeather() {
     var p = [];
     $.ajax({ 
-        url:"http://api.openweathermap.org/data/2.5/forecast",
+        url:"https://api.openweathermap.org/data/2.5/forecast",
         method:"GET",// GET hay POST do API quyet dinh
         data:{
             q:"Hanoi,vietnam",
@@ -45,7 +45,7 @@ function loadWeather() {
                 var ct = "<div class=\"item col-sm-3\">\n" +
                     "            <span class=\"time\">" + p[i].dt_txt + "</span>\n" +
                     "            <br>\n" +
-                    "            <img class=\"icon\" src=\"http://openweathermap.org/img/w/"+ icon +".png\">\n" +
+                    "            <img class=\"icon\" src=\"https://openweathermap.org/img/w/"+ icon +".png\">\n" +
                     "            <h3 class=\"temp-max\">" + p[i].main.temp_max + " <sup>o</sup><sup>C</sup></h3>\n" +
                     "            <span class=\"temp-min\">" + p[i].main.temp_min + "</span>\n" +
                     "        </div>"; 
