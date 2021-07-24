@@ -1,0 +1,12 @@
+.title{
+    text-align: center;
+    color: red;
+}
+.form{
+    width: 50%;
+     display: block;
+     margin: 0 auto;;
+}
+.content{
+    border: 2px solid rgb(41, 110, 189);
+}
